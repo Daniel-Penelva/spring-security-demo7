@@ -21,7 +21,7 @@ public interface UserService extends UserDetailsService{
 
 /** UserDetailsService
  * Implementando a interface UserDetails para fornecer informações de autenticação e autorização sobre o usuário.
- * (Não utilizarei) Implementando o método loadUserByUsername para carregar os detalhes do usuário com base no nome de usuário.
+ * OBS. Implementa o método loadUserByUsername para carregar os detalhes do usuário com base no nome de usuário.
  * 
  * Este serviço de usuário define várias operações relacionadas à gestão do perfil e da conta do usuário. 
  * 
