@@ -52,7 +52,7 @@ public class User implements UserDetails{
     private String firstName;
 
     @Column(name = "LAST_NAME", nullable = false)
-    private String LastName;
+    private String lastName;
 
     @Column(name = "EMAIL", nullable = false, unique = true)
     private String email;
@@ -181,7 +181,7 @@ public class User implements UserDetails{
 
     // Metodo utilitario para retornar o nome completo do usuario
     public String getFullName() {
-        return this.firstName + " " + this.LastName;
+        return this.firstName + " " + this.lastName;
     }
     
 }
