@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# ignorar chaves locais (para JWT)
+src/main/resources/keys/local-only/
