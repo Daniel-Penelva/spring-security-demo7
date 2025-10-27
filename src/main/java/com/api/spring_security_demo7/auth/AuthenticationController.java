@@ -25,6 +25,8 @@ import lombok.RequiredArgsConstructor;
 @Tag(name = "Authentication", description = "Authentication API")
 public class AuthenticationController {
 
+    // Utilizando Swagger: http://localhost:8080/swagger-ui.html
+
     private final AuthenticationService authenticationService;
 
     /**
