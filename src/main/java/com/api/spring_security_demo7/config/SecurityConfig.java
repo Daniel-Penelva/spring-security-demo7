@@ -1,5 +1,5 @@
 package com.api.spring_security_demo7.config;
-
+/*
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -17,7 +17,7 @@ public class SecurityConfig {
 
     // Este método configura usuários na memória para autenticação. Esta configuração é útil para testes ou aplicações simples.
     // Está definido três usuários: "user1" e "user2" com a role "USER", e "admin" com as roles "USER" e "ADMIN".
-    @Bean
+    //@Bean
     public InMemoryUserDetailsManager userDetailsService() {
         return new InMemoryUserDetailsManager(
             User.withUsername("user1")
@@ -44,7 +44,7 @@ public class SecurityConfig {
     // Este método configura a cadeia de filtros de segurança para a aplicação.
     // Ele desabilita o CSRF, define regras de autorização para diferentes endpoints,
     // configura a política de criação de sessão como stateless e habilita a autenticação HTTP básica.
-    @Bean
+    //@Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
             .csrf(AbstractHttpConfigurer::disable)
@@ -61,3 +61,4 @@ public class SecurityConfig {
 }
 
 // Esta Class SecurityConfig é responsável por configurar a segurança da aplicação Spring Boot usando Spring Security. 
+*/

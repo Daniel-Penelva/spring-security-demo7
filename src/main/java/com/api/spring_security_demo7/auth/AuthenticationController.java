@@ -70,6 +70,7 @@ public class AuthenticationController {
     })
     @PostMapping("/register")
     public ResponseEntity<Void> register(@Valid @RequestBody final RegistrationRequest request) {
+        this.authenticationService.register(request);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
